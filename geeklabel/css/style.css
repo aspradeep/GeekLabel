@@ -1,0 +1,322 @@
+/*------------------------------------------------------------------
+Project:	Geeks Label
+Version:	1.0
+-------------------------------------------------------------------*/
+@font-face {
+  font-family: 'Museo Sans 300';
+  src: url("fonts/MuseoSans-300.eot");
+  src: url("fonts/MuseoSans-300.eot?#iefix") format("embedded-opentype"), url("fonts/MuseoSans-300.woff2") format("woff2"), url("fonts/MuseoSans-300.woff") format("woff"), url("fonts/MuseoSans-300.ttf") format("truetype"), url("fonts/MuseoSans-300.svg#MuseoSans-300") format("svg"); }
+@font-face {
+  font-family: 'Museo 300';
+  src: url("fonts/35CE67_0_0.eot");
+  src: url("fonts/35CE67_0_0.eot?#iefix") format("embedded-opentype"), url("fonts/35CE67_0_0.woff2") format("woff2"), url("fonts/35CE67_0_0.woff") format("woff"), url("fonts/35CE67_0_0.ttf") format("truetype"); }
+/*------------------------------------------------------------------
+
+01. General Styles
+02. Intro
+03. Illustrative Sections
+04. Services Section
+05. Clients Section
+06. Map Section
+07. Contact Section
+08. Responsive
+
+-------------------------------------------------------------------*/
+/* 01. General Styles */
+html, body {
+  font-family: "Museo Sans 300", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  width: 100%;
+  color: #414042;
+  background-color: #ffffff; }
+
+.color-primary {
+  color: #414042; }
+
+.color-secondary {
+  color: #d83454; }
+
+section.section {
+  height: 100vh;
+  width: 100%; }
+
+/* 02. Intro Section */
+section.intro {
+  background-color: #d83454; }
+  section.intro div.container {
+    display: table;
+    height: 100%;
+    position: relative; }
+    section.intro div.container div.content {
+      display: table-cell;
+      vertical-align: middle;
+      float: none; }
+      section.intro div.container div.content h2 {
+        color: #ffffff;
+        font-size: 24px;
+        line-height: 1.5; }
+    section.intro div.container div.scrollbtnwrap {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      left: 0;
+      text-align: center; }
+      section.intro div.container div.scrollbtnwrap a.btn-scroll {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../images/arrowwhite.png) no-repeat center;
+        background-size: 15px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff; }
+
+/* 03. Illustrative Sections */
+section.illustration {
+  background-color: #f1f2f2; }
+  section.illustration div.container {
+    display: table;
+    height: 100%;
+    position: relative; }
+    section.illustration div.container div.content {
+      display: table-cell;
+      vertical-align: middle;
+      float: none; }
+      section.illustration div.container div.content h3 {
+        color: #414042;
+        font-size: 36px;
+        line-height: 1.5;
+        margin-top: 100px; }
+    section.illustration div.container div.scrollbtnwrap {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      left: 0;
+      text-align: center; }
+      section.illustration div.container div.scrollbtnwrap a.btn-scroll {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../images/arrowwhite.png) no-repeat center #d83454;
+        background-size: 15px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #ffffff;
+        -webkit-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+
+/* 04. Services Section */
+section.services {
+  background-color: #ffffff; }
+  section.services div.container {
+    display: table;
+    height: 100%;
+    position: relative; }
+    section.services div.container div.content {
+      display: table-cell;
+      vertical-align: top;
+      float: none; }
+      section.services div.container div.content h2 {
+        color: #414042;
+        font-size: 60px;
+        font-family: "Museo 300";
+        margin-bottom: 80px;
+        margin-top: 60px; }
+      section.services div.container div.content h3 {
+        color: #414042;
+        font-size: 24px;
+        line-height: 1.5;
+        margin-top: 30px; }
+      section.services div.container div.content .service-icon {
+        width: 200px;
+        height: 200px;
+        display: table;
+        margin: 0 auto;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        background: #d83454; }
+        section.services div.container div.content .service-icon .iconwrap {
+          display: table-cell;
+          vertical-align: middle; }
+          section.services div.container div.content .service-icon .iconwrap img {
+            width: auto;
+            padding: 20px;
+            max-width: 65%; }
+    section.services div.container div.scrollbtnwrap {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      left: 0;
+      text-align: center; }
+      section.services div.container div.scrollbtnwrap a.btn-scroll {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../images/arrowblack.png) no-repeat center #ffffff;
+        background-size: 15px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #000000;
+        -webkit-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+
+/* 05. Clients Section */
+section.clients {
+  background-color: #f1f2f2; }
+  section.clients div.container {
+    display: block;
+    height: 100%;
+    position: relative; }
+    section.clients div.container div.content h2 {
+      color: #414042;
+      font-size: 60px;
+      font-family: "Museo 300";
+      margin-bottom: 120px;
+      margin-top: 120px; }
+    section.clients div.container div.content .owl-carousel {
+      margin-top: 40px;
+      position: relative; }
+      section.clients div.container div.content .owl-carousel .owl-stage {
+        display: flex;
+        align-items: center; }
+      section.clients div.container div.content .owl-carousel .owl-item img {
+        display: block;
+        width: 100%;
+        height: auto !important; }
+      section.clients div.container div.content .owl-carousel .owl-prev {
+        position: absolute;
+        top: 40%;
+        left: -80px; }
+        section.clients div.container div.content .owl-carousel .owl-prev i {
+          color: #b1b6b7; }
+      section.clients div.container div.content .owl-carousel .owl-next {
+        position: absolute;
+        top: 40%;
+        right: -80px; }
+        section.clients div.container div.content .owl-carousel .owl-next i {
+          color: #b1b6b7; }
+    section.clients div.container div.scrollbtnwrap {
+      position: absolute;
+      bottom: 30px;
+      width: 100%;
+      left: 0;
+      text-align: center; }
+      section.clients div.container div.scrollbtnwrap a.btn-scroll {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        background: url(../images/arrowblack.png) no-repeat center #ffffff;
+        background-size: 15px;
+        width: 50px;
+        height: 50px;
+        border: 2px solid #000000;
+        -webkit-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+
+/* 06. Map Section */
+section.mapsection {
+  background-color: #f1f2f2;
+  position: relative; }
+  section.mapsection .map-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 300px; }
+    section.mapsection .map-container #map {
+      height: 100%; }
+  section.mapsection h2 {
+    color: #414042;
+    font-size: 60px;
+    font-family: "Museo 300";
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 0; }
+  section.mapsection div.scrollbtnwrap {
+    position: absolute;
+    bottom: 30px;
+    width: 100%;
+    left: 0;
+    text-align: center; }
+    section.mapsection div.scrollbtnwrap a.btn-scroll {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      background: url(../images/arrowwhite.png) no-repeat center #d83454;
+      background-size: 15px;
+      width: 50px;
+      height: 50px;
+      border: 2px solid #ffffff;
+      -webkit-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      -moz-box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1);
+      box-shadow: 4px 0px 12px 0px rgba(0, 0, 0, 0.1); }
+
+/* 07. Contact Section */
+section.contact {
+  background-color: #f1f2f2;
+  position: relative; }
+  section.contact h2 {
+    color: #414042;
+    font-size: 60px;
+    font-family: "Museo 300";
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-top: 0; }
+  section.contact .contactform {
+    position: relative; }
+    section.contact .contactform .form-control {
+      margin-bottom: 10px; }
+    section.contact .contactform .btn-primary {
+      background: #d83454 !important;
+      border-color: #d83454 !important;
+      display: block;
+      width: 100%;
+      margin-bottom: 30px; }
+
+/* 08. Responsive */
+@media screen and (max-width: 991px) {
+  section.services .col-md-3 {
+    margin-bottom: 30px; }
+  section.services h3 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 36px !important;
+    position: relative;
+    left: 60px; }
+  section.services .service-icon {
+    display: table-cell !important;
+    vertical-align: middle; }
+
+  section.clients div.container div.content .owl-carousel {
+    margin-top: 350px;
+    position: relative; }
+
+  section.mapsection .map-container {
+    height: 700px !important;
+    margin-top: 150px; }
+
+  section.contact h2 {
+    padding-top: 200px;
+    padding-bottom: 200px; } }
+
+/*# sourceMappingURL=style.css.map */

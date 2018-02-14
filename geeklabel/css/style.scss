@@ -1,0 +1,414 @@
+/*------------------------------------------------------------------
+Project:	Geeks Label
+Version:	1.0
+-------------------------------------------------------------------*/
+@charset "utf-8";
+
+
+@font-face {
+    font-family: 'Museo Sans 300';
+    src: url('fonts/MuseoSans-300.eot');
+    src: url('fonts/MuseoSans-300.eot?#iefix') format('embedded-opentype'),
+        url('fonts/MuseoSans-300.woff2') format('woff2'),
+        url('fonts/MuseoSans-300.woff') format('woff'),
+        url('fonts/MuseoSans-300.ttf') format('truetype'),
+        url('fonts/MuseoSans-300.svg#MuseoSans-300') format('svg');
+}
+
+
+@font-face {
+	font-family: 'Museo 300';
+	src: url('fonts/35CE67_0_0.eot');
+	src: url('fonts/35CE67_0_0.eot?#iefix') format('embedded-opentype'),
+		url('fonts/35CE67_0_0.woff2') format('woff2'),
+		url('fonts/35CE67_0_0.woff') format('woff'),
+		url('fonts/35CE67_0_0.ttf') format('truetype');
+}
+
+
+$defaultfont: 'Museo Sans 300', sans-serif;
+$m300: 'Museo 300';
+$primary-color: #414042;
+$secondary-color: #d83454;
+$white: #ffffff;
+$black: #000000;
+$grey: #f1f2f2;
+
+@mixin transition($att , $duration, $animation) {
+	-webkit-transition: $att $duration $animation;
+	-moz-transition: $att $duration $animation;
+	-ms-transition: $att $duration $animation;
+	-o-transition: $att $duration $animation;
+	transition: $att $duration $animation;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow($data) {
+	-webkit-box-shadow:$data; 
+	-moz-box-shadow:$data ; 
+	box-shadow:$data;
+}
+
+
+
+/*------------------------------------------------------------------
+
+01. General Styles
+02. Intro
+03. Illustrative Sections
+04. Services Section
+05. Clients Section
+06. Map Section
+07. Contact Section
+08. Responsive
+
+-------------------------------------------------------------------*/
+
+/* 01. General Styles */
+
+html, body {
+	font-family: $defaultfont;
+	font-size: 16px;
+	height: 100%;
+	width: 100%;
+	color: $primary-color;
+	background-color: $white;
+}
+
+.color-primary{
+	color: $primary-color;
+}
+
+.color-secondary{
+	color: $secondary-color;
+}
+
+section.section { 
+	height: 100vh;
+    width: 100%;
+}
+
+/* 02. Intro Section */
+section.intro{
+	background-color: $secondary-color;
+	div.container{
+		display: table;
+		height: 100%;
+		position: relative;
+		div.content{
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+			h2{
+				color: $white;
+				font-size: 24px;
+				line-height: 1.5;				
+			}
+		}
+		div.scrollbtnwrap{
+			position: absolute;
+			bottom:30px;
+			width: 100%;
+			left: 0;
+			text-align: center;
+			a.btn-scroll{
+				@include border-radius(50%);
+				margin-left: auto;
+				margin-right: auto;
+				background: url(../images/arrowwhite.png) no-repeat center;
+				background-size: 15px;
+				width: 50px;
+				height: 50px;
+				border: 2px solid $white;
+			}
+		}
+	}
+}
+
+/* 03. Illustrative Sections */
+
+section.illustration{
+	background-color: $grey;
+	div.container{
+		display: table;
+		height: 100%;
+		position: relative;
+		div.content{
+			display: table-cell;
+			vertical-align: middle;
+			float: none;
+			h3{
+				color: $primary-color;
+				font-size: 36px;
+				line-height: 1.5;
+				margin-top:100px;
+			}
+		}
+		div.scrollbtnwrap{
+			position: absolute;
+			bottom:30px;
+			width: 100%;
+			left: 0;
+			text-align: center;
+			a.btn-scroll{
+				@include border-radius(50%);
+				margin-left: auto;
+				margin-right: auto;
+				background: url(../images/arrowwhite.png) no-repeat center $secondary-color;
+				background-size: 15px;
+				width: 50px;
+				height: 50px;
+				border: 2px solid $white;
+				@include box-shadow( 4px 0px 12px 0px rgba(0,0,0,0.1));
+			}
+		}
+	}
+}
+
+/* 04. Services Section */
+
+section.services{
+	background-color: $white;
+	div.container{
+		display: table;
+		height: 100%;
+		position: relative;
+		div.content{
+			display: table-cell;
+			vertical-align: top;
+			float: none;
+			h2{
+				color: $primary-color;
+				font-size: 60px;
+				font-family: $m300;
+				margin-bottom: 80px;
+				margin-top: 60px;
+			}
+			h3{
+				color: $primary-color;
+				font-size: 24px;
+				line-height: 1.5;
+				margin-top:30px;
+			}
+			.service-icon{
+				width: 200px;				
+				height: 200px;
+				display:table;
+				margin: 0 auto;
+				@include border-radius(50%);
+				background: $secondary-color;
+				.iconwrap{
+					display:table-cell;
+					vertical-align: middle;
+					img{
+						width: auto;
+						padding:20px;
+						max-width:65%;
+					}
+				}
+			}
+		}
+		div.scrollbtnwrap{
+			position: absolute;
+			bottom:30px;
+			width: 100%;
+			left: 0;
+			text-align: center;
+			a.btn-scroll{
+				@include border-radius(50%);
+				margin-left: auto;
+				margin-right: auto;
+				background: url(../images/arrowblack.png) no-repeat center $white;
+				background-size: 15px;
+				width: 50px;
+				height: 50px;
+				border: 2px solid $black;
+				@include box-shadow( 4px 0px 12px 0px rgba(0,0,0,0.1));
+			}
+		}
+	}
+}
+
+/* 05. Clients Section */
+
+section.clients{
+	background-color: $grey;
+	div.container{
+		display: block;
+		height: 100%;
+		position: relative;
+		div.content{
+			h2{
+				color: $primary-color;
+				font-size: 60px;
+				font-family: $m300;
+				margin-bottom: 120px;
+				margin-top: 120px;
+			}
+			.owl-carousel {
+				margin-top:40px;
+				position: relative;
+				.owl-stage {
+					display: flex;
+					align-items: center;
+				}
+				.owl-item img {
+					display: block;
+					width: 100%;
+					height: auto !important;
+				}
+				.owl-prev{
+					position: absolute;
+					top: 40%;
+					left: -80px;
+					i{
+						color: #b1b6b7;
+					}
+				}
+				.owl-next{
+					position: absolute;
+					top: 40%;
+					right: -80px;
+					i{
+						color: #b1b6b7;
+					}
+				}
+			}
+			
+		}
+		div.scrollbtnwrap{
+			position: absolute;
+			bottom:30px;
+			width: 100%;
+			left: 0;
+			text-align: center;
+			a.btn-scroll{
+				@include border-radius(50%);
+				margin-left: auto;
+				margin-right: auto;
+				background: url(../images/arrowblack.png) no-repeat center $white;
+				background-size: 15px;
+				width: 50px;
+				height: 50px;
+				border: 2px solid $black;
+				@include box-shadow( 4px 0px 12px 0px rgba(0,0,0,0.1));
+			}
+		}
+	}
+}
+
+
+/* 06. Map Section */
+
+section.mapsection{
+	background-color: $grey;
+	position: relative;
+	.map-container {
+		position: relative;
+		overflow: hidden;
+		width: 100%;
+		height: 300px;
+		#map{
+			height: 100%;
+		}
+	}
+	h2{
+		color: $primary-color;
+		font-size: 60px;
+		font-family: $m300;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		margin-top: 0;
+	}
+	div.scrollbtnwrap{
+		position: absolute;
+		bottom:30px;
+		width: 100%;
+		left: 0;
+		text-align: center;
+		a.btn-scroll{
+			@include border-radius(50%);
+			margin-left: auto;
+			margin-right: auto;
+			background: url(../images/arrowwhite.png) no-repeat center $secondary-color;
+			background-size: 15px;
+			width: 50px;
+			height: 50px;
+			border: 2px solid $white;
+			@include box-shadow( 4px 0px 12px 0px rgba(0,0,0,0.1));
+		}
+	}
+}
+
+/* 07. Contact Section */
+
+section.contact{
+	background-color: $grey;
+	position: relative;
+	h2{
+		color: $primary-color;
+		font-size: 60px;
+		font-family: $m300;
+		padding-bottom: 50px;
+		padding-top: 50px;
+		margin-top: 0;
+	}
+	.contactform{
+		position: relative;
+		.form-control{
+			margin-bottom:10px;
+		}
+		.btn-primary{
+			background: $secondary-color !important;
+			border-color: $secondary-color !important;
+			display:block;
+			width:100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+/* 08. Responsive */
+
+@media screen and (max-width: 991px) {
+	section.services{
+		.col-md-3{
+			margin-bottom: 30px;
+		}
+		h3{
+			display:table-cell;
+			vertical-align: middle;
+			font-size: 36px !important;
+			position: relative;
+			left: 60px;
+		}
+		.service-icon{
+			display:table-cell !important;
+			vertical-align: middle;
+		}
+	}	
+
+	section.clients div.container div.content .owl-carousel {
+		margin-top: 350px;
+		position: relative;
+	}
+
+	section.mapsection .map-container {
+		height: 700px !important;
+		margin-top: 150px;
+	}
+
+	section.contact h2{
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+
+
+

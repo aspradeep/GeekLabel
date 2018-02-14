@@ -1,0 +1,30 @@
+name = Geek Label Theme
+description = Drupal 7 Theme for Geek Label
+screenshot = images/screenshot.png
+core = 7.x
+base theme = bootstrap
+
+regions[page_top] = Page top
+regions[highlight] = Highlight
+regions[content] = Content
+regions[clients] = Clients Section
+regions[contact] = Contact Form
+regions[footer] = Footer
+
+features[] = logo
+features[] = favicon
+
+scripts[] = js/owl.carousel.min.js
+scripts[] = js/scripts.js
+
+plugins[panels][layouts] = layouts
+
+stylesheets[all][] = css/owl.carousel.min.css
+stylesheets[all][] = css/owl.theme.default.min.css
+stylesheets[all][] = css/font-awesome.min.css
+stylesheets[all][] = css/style.css
+
+settings[basic_tabs] = 1
+settings[basic_breadcrumb_separator] = »
+settings[wireframe_mode] = 0
+settings[clear_registry] = 0
